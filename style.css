@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-purple: #800080; /* Cor do cabeçalho e rodapé */
+    --light-purple: #9932CC; /* Cor do banner e círculos */
+    --text-color: #333;
+    --bg-color: #fff;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #f4f4f4; /* Fundo cinza claro conforme parece na imagem (ou branco) */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.main-header {
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.main-header h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Opcional, mas comum */
+}
+
+/* Banner Roxo */
+.hero-banner {
+    background-color: var(--light-purple);
+    height: 250px; /* Ajustar conforme necessário */
+    width: 100%;
+}
+
+/* Seções Gerais */
+section {
+    padding: 40px 0;
+    background-color: #fff; /* O fundo do conteúdo parece branco no meio do cinza? Ou tudo branco? Vamos assumir branco no container ou body branco. Vamos deixar body branco para simplificar se não houver container visível na imagem. Na imagem parece haver uma margem cinza nas laterais? Se sim, o body é cinza e o conteúdo é branco. Vou assumir layout full width branco para o conteúdo principal por enquanto, ou centralizado. Na imagem, parece um "papel" centralizado. Vamos fazer o body cinza claro e um main container branco. */
+}
+
+/* Ajuste para o layout "papel" se necessário. 
+   Mas a instrução pede "Reproduzir a estrutura...". 
+   Vou manter simples: body branco, a menos que o usuário queira o efeito de "folha".
+   Olhando a imagem, tem bordas cinzas nas laterais. Vou colocar um container branco no meio.
+*/
+
+body {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Wrapper para simular a "página" */
+body > * {
+    width: 100%;
+    max-width: 800px; /* Largura da "folha" */
+    background: #fff;
+}
+
+/* Correção: Header e Footer e Banner devem respeitar a largura máxima se quisermos o efeito de "folha" centralizada */
+
+/* Títulos das Seções */
+.section-title {
+    color: var(--dark-purple); /* Ou light purple? Na imagem parece roxo escuro ou médio */
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.title-underline {
+    width: 50px;
+    height: 2px;
+    background-color: var(--light-purple);
+    margin: 0 auto 30px auto;
+}
+
+/* Conteúdo Central */
+.content-section {
+    padding: 40px 50px; /* Mais padding nas laterais */
+    text-align: justify; /* Ou center, mas blocos de texto longo geralmente justify ou left */
+}
+
+.description-text {
+    font-size: 0.9rem;
+    color: #000;
+    text-align: center; /* Na imagem o texto parece justificado ou centralizado? Parece justificado mas com a última linha centralizada? Não, parece justificado block. Vamos tentar justify. */
+    text-align-last: center; /* Tentar centralizar a última linha se for o caso, ou apenas center */
+    text-align: justify;
+}
+
+/* Seção Equipe */
+.team-section {
+    padding: 20px 50px 60px 50px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center; /* Centralizar os itens */
+    gap: 40px; /* Espaço entre os itens */
+    flex-wrap: wrap;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: var(--light-purple);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    color: var(--dark-purple);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.team-card .role {
+    color: var(--dark-purple);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto; /* Empurra para baixo se tiver pouco conteúdo */
+}
