@@ -1,4 +1,4 @@
-# Digital College — Página Estilizada
+# Página Estilizada
 
 Projeto simples para reproduzir a estrutura e o estilo visual de uma página conforme imagem de referência, utilizando propriedades de CSS como Box Model (margin, padding, border) e display (incluindo Flexbox).
 
